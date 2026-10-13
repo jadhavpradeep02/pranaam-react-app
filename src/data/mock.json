@@ -1,0 +1,851 @@
+{
+  "customers": [
+    {
+      "customerId": 1,
+      "customerReference": "CUST-001",
+      "name": "Demo Customer 01"
+    },
+    {
+      "customerId": 2,
+      "customerReference": "CUST-002",
+      "name": "Demo Customer 02"
+    },
+    {
+      "customerId": 3,
+      "customerReference": "CUST-003",
+      "name": "Demo Customer 03"
+    },
+    {
+      "customerId": 4,
+      "customerReference": "CUST-004",
+      "name": "Demo Customer 04"
+    },
+    {
+      "customerId": 5,
+      "customerReference": "CUST-005",
+      "name": "Demo Customer 05"
+    },
+    {
+      "customerId": 6,
+      "customerReference": "CUST-006",
+      "name": "Demo Customer 06"
+    },
+    {
+      "customerId": 7,
+      "customerReference": "CUST-007",
+      "name": "Demo Customer 07"
+    },
+    {
+      "customerId": 8,
+      "customerReference": "CUST-008",
+      "name": "Demo Customer 08"
+    },
+    {
+      "customerId": 9,
+      "customerReference": "CUST-009",
+      "name": "Demo Customer 09"
+    },
+    {
+      "customerId": 10,
+      "customerReference": "CUST-010",
+      "name": "Demo Customer 10"
+    },
+    {
+      "customerId": 11,
+      "customerReference": "CUST-011",
+      "name": "Demo Customer 11"
+    },
+    {
+      "customerId": 12,
+      "customerReference": "CUST-012",
+      "name": "Demo Customer 12"
+    },
+    {
+      "customerId": 13,
+      "customerReference": "CUST-013",
+      "name": "Demo Customer 13"
+    },
+    {
+      "customerId": 14,
+      "customerReference": "CUST-014",
+      "name": "Demo Customer 14"
+    },
+    {
+      "customerId": 15,
+      "customerReference": "CUST-015",
+      "name": "Demo Customer 15"
+    },
+    {
+      "customerId": 16,
+      "customerReference": "CUST-016",
+      "name": "Demo Customer 16"
+    },
+    {
+      "customerId": 17,
+      "customerReference": "CUST-017",
+      "name": "Demo Customer 17"
+    },
+    {
+      "customerId": 18,
+      "customerReference": "CUST-018",
+      "name": "Demo Customer 18"
+    },
+    {
+      "customerId": 19,
+      "customerReference": "CUST-019",
+      "name": "Demo Customer 19"
+    },
+    {
+      "customerId": 20,
+      "customerReference": "CUST-020",
+      "name": "Demo Customer 20"
+    }
+  ],
+  "trips": [
+    {
+      "tripId": "TRIP-20261020-001",
+      "customerId": 1,
+      "serviceType": "Arrival assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0001",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T08:00:00+05:30",
+      "serviceEndAt": "2026-10-20T09:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 2,
+      "language": "English"
+    },
+    {
+      "tripId": "TRIP-20261020-002",
+      "customerId": 2,
+      "serviceType": "Departure assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0002",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T08:30:00+05:30",
+      "serviceEndAt": "2026-10-20T09:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 3,
+      "language": "Hindi"
+    },
+    {
+      "tripId": "TRIP-20261020-003",
+      "customerId": 3,
+      "serviceType": "Transfer assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0003",
+      "movementType": "TRANSFER",
+      "serviceStartAt": "2026-10-20T09:00:00+05:30",
+      "serviceEndAt": "2026-10-20T10:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": true,
+      "passengers": 4,
+      "language": "Marathi"
+    },
+    {
+      "tripId": "TRIP-20261020-004",
+      "customerId": 4,
+      "serviceType": "Arrival assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0004",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T09:30:00+05:30",
+      "serviceEndAt": "2026-10-20T10:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 1,
+      "language": "Gujarati"
+    },
+    {
+      "tripId": "TRIP-20261020-005",
+      "customerId": 5,
+      "serviceType": "Departure assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0005",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T10:00:00+05:30",
+      "serviceEndAt": "2026-10-20T11:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 2,
+      "language": "Tamil"
+    },
+    {
+      "tripId": "TRIP-20261020-006",
+      "customerId": 6,
+      "serviceType": "Transfer assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0006",
+      "movementType": "TRANSFER",
+      "serviceStartAt": "2026-10-20T10:30:00+05:30",
+      "serviceEndAt": "2026-10-20T11:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 3,
+      "language": "Arabic"
+    },
+    {
+      "tripId": "TRIP-20261020-007",
+      "customerId": 7,
+      "serviceType": "Arrival assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0007",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T11:00:00+05:30",
+      "serviceEndAt": "2026-10-20T12:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 4,
+      "language": "English"
+    },
+    {
+      "tripId": "TRIP-20261020-008",
+      "customerId": 8,
+      "serviceType": "Departure assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0008",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T11:30:00+05:30",
+      "serviceEndAt": "2026-10-20T12:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": true,
+      "passengers": 1,
+      "language": "Hindi"
+    },
+    {
+      "tripId": "TRIP-20261020-009",
+      "customerId": 9,
+      "serviceType": "Transfer assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0009",
+      "movementType": "TRANSFER",
+      "serviceStartAt": "2026-10-20T12:00:00+05:30",
+      "serviceEndAt": "2026-10-20T13:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 2,
+      "language": "Marathi"
+    },
+    {
+      "tripId": "TRIP-20261020-010",
+      "customerId": 10,
+      "serviceType": "Arrival assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0010",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T12:30:00+05:30",
+      "serviceEndAt": "2026-10-20T13:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 3,
+      "language": "Gujarati"
+    },
+    {
+      "tripId": "TRIP-20261020-011",
+      "customerId": 11,
+      "serviceType": "Departure assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0011",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T13:00:00+05:30",
+      "serviceEndAt": "2026-10-20T14:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 4,
+      "language": "Tamil"
+    },
+    {
+      "tripId": "TRIP-20261020-012",
+      "customerId": 12,
+      "serviceType": "Transfer assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0012",
+      "movementType": "TRANSFER",
+      "serviceStartAt": "2026-10-20T13:30:00+05:30",
+      "serviceEndAt": "2026-10-20T14:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 1,
+      "language": "Arabic"
+    },
+    {
+      "tripId": "TRIP-20261020-013",
+      "customerId": 13,
+      "serviceType": "Arrival assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0013",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T14:00:00+05:30",
+      "serviceEndAt": "2026-10-20T15:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": true,
+      "passengers": 2,
+      "language": "English"
+    },
+    {
+      "tripId": "TRIP-20261020-014",
+      "customerId": 14,
+      "serviceType": "Departure assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0014",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T14:30:00+05:30",
+      "serviceEndAt": "2026-10-20T15:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 3,
+      "language": "Hindi"
+    },
+    {
+      "tripId": "TRIP-20261020-015",
+      "customerId": 15,
+      "serviceType": "Transfer assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0015",
+      "movementType": "TRANSFER",
+      "serviceStartAt": "2026-10-20T15:00:00+05:30",
+      "serviceEndAt": "2026-10-20T16:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 4,
+      "language": "Marathi"
+    },
+    {
+      "tripId": "TRIP-20261020-016",
+      "customerId": 16,
+      "serviceType": "Arrival assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0016",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T15:30:00+05:30",
+      "serviceEndAt": "2026-10-20T16:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 1,
+      "language": "Gujarati"
+    },
+    {
+      "tripId": "TRIP-20261020-017",
+      "customerId": 17,
+      "serviceType": "Departure assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0017",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T16:00:00+05:30",
+      "serviceEndAt": "2026-10-20T17:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 2,
+      "language": "Tamil"
+    },
+    {
+      "tripId": "TRIP-20261020-018",
+      "customerId": 18,
+      "serviceType": "Transfer assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0018",
+      "movementType": "TRANSFER",
+      "serviceStartAt": "2026-10-20T16:30:00+05:30",
+      "serviceEndAt": "2026-10-20T17:45:00+05:30",
+      "status": "CONFIRMED",
+      "vip": true,
+      "passengers": 3,
+      "language": "Arabic"
+    },
+    {
+      "tripId": "TRIP-20261020-019",
+      "customerId": 19,
+      "serviceType": "Arrival assistance",
+      "terminal": "T1",
+      "flightNumber": "DEMO0019",
+      "movementType": "ARRIVAL",
+      "serviceStartAt": "2026-10-20T17:00:00+05:30",
+      "serviceEndAt": "2026-10-20T18:15:00+05:30",
+      "status": "CONFIRMED",
+      "vip": false,
+      "passengers": 4,
+      "language": "English"
+    },
+    {
+      "tripId": "TRIP-20261020-020",
+      "customerId": 20,
+      "serviceType": "Departure assistance",
+      "terminal": "T2",
+      "flightNumber": "DEMO0020",
+      "movementType": "DEPARTURE",
+      "serviceStartAt": "2026-10-20T17:30:00+05:30",
+      "serviceEndAt": "2026-10-20T18:45:00+05:30",
+      "status": "CANCELLED",
+      "vip": false,
+      "passengers": 1,
+      "language": "Hindi"
+    }
+  ],
+  "staff": [
+    {
+      "staffId": 1,
+      "employeeCode": "GRO-001",
+      "name": "Demo GRO 01",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 1
+    },
+    {
+      "staffId": 2,
+      "employeeCode": "GRO-002",
+      "name": "Demo GRO 02",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "ON_SERVICE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 2
+    },
+    {
+      "staffId": 3,
+      "employeeCode": "GRO-003",
+      "name": "Demo GRO 03",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [
+        "VIP certification"
+      ],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 3
+    },
+    {
+      "staffId": 4,
+      "employeeCode": "GRO-004",
+      "name": "Demo GRO 04",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "ON_LEAVE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 0
+    },
+    {
+      "staffId": 5,
+      "employeeCode": "GRO-005",
+      "name": "Demo GRO 05",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 1
+    },
+    {
+      "staffId": 6,
+      "employeeCode": "GRO-006",
+      "name": "Demo GRO 06",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [
+        "VIP certification"
+      ],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 2
+    },
+    {
+      "staffId": 7,
+      "employeeCode": "GRO-007",
+      "name": "Demo GRO 07",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "ON_SERVICE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 3
+    },
+    {
+      "staffId": 8,
+      "employeeCode": "GRO-008",
+      "name": "Demo GRO 08",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 0
+    },
+    {
+      "staffId": 9,
+      "employeeCode": "GRO-009",
+      "name": "Demo GRO 09",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "ON_LEAVE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [
+        "VIP certification"
+      ],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 1
+    },
+    {
+      "staffId": 10,
+      "employeeCode": "GRO-010",
+      "name": "Demo GRO 10",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 2
+    },
+    {
+      "staffId": 11,
+      "employeeCode": "GRO-011",
+      "name": "Demo GRO 11",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 3
+    },
+    {
+      "staffId": 12,
+      "employeeCode": "GRO-012",
+      "name": "Demo GRO 12",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "ON_SERVICE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [
+        "VIP certification"
+      ],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 0
+    },
+    {
+      "staffId": 13,
+      "employeeCode": "GRO-013",
+      "name": "Demo GRO 13",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 1
+    },
+    {
+      "staffId": 14,
+      "employeeCode": "GRO-014",
+      "name": "Demo GRO 14",
+      "role": "GRO",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "ON_LEAVE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 2
+    },
+    {
+      "staffId": 15,
+      "employeeCode": "GRO-015",
+      "name": "Demo GRO 15",
+      "role": "GRO",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [
+        "VIP certification"
+      ],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 3
+    },
+    {
+      "staffId": 16,
+      "employeeCode": "GRL-001",
+      "name": "Demo GRL 01",
+      "role": "GRL",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 0
+    },
+    {
+      "staffId": 17,
+      "employeeCode": "GRL-002",
+      "name": "Demo GRL 02",
+      "role": "GRL",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "ON_SERVICE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 1
+    },
+    {
+      "staffId": 18,
+      "employeeCode": "GRL-003",
+      "name": "Demo GRL 03",
+      "role": "GRL",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [
+        "VIP certification"
+      ],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 2
+    },
+    {
+      "staffId": 19,
+      "employeeCode": "GRL-004",
+      "name": "Demo GRL 04",
+      "role": "GRL",
+      "terminal": "T1",
+      "location": "T1 \u00b7 Arrival",
+      "availability": "ON_LEAVE",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Wheelchair assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 3
+    },
+    {
+      "staffId": 20,
+      "employeeCode": "GRL-005",
+      "name": "Demo GRL 05",
+      "role": "GRL",
+      "terminal": "T2",
+      "location": "T2 \u00b7 Departure",
+      "availability": "AVAILABLE",
+      "languages": [
+        "English",
+        "Marathi"
+      ],
+      "skills": [
+        "Meet and greet",
+        "Transfer support",
+        "Family assistance"
+      ],
+      "certifications": [],
+      "authorizedAirports": [
+        "BOM"
+      ],
+      "workload": 0
+    }
+  ],
+  "allocations": []
+}

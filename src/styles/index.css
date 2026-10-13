@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    color: #152744;
+    background: #f2f6fc;
+    font-synthesis: none
+}
+
+body {
+    margin: 0
+}
+
+button,
+input,
+select {
+    font: inherit
+}
+
+button {
+    cursor: pointer
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e4ebf5;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px #19375b08
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 750;
+    letter-spacing: -.6px
+}
+
+.muted {
+    color: #71819b
+}
+
+.field {
+    border: 1px solid #dfe7f2;
+    border-radius: 8px;
+    background: white;
+    padding: 10px 12px;
+    font-size: 13px;
+    min-width: 0;
+    outline: none
+}
+
+.field:focus {
+    border-color: #2563eb
+}
+
+.pill {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 650
+}
+
+.pill-green {
+    background: #dcfce7;
+    color: #15803d
+}
+
+.pill-amber {
+    background: #fef3c7;
+    color: #a16207
+}
+
+.pill-red {
+    background: #fee2e2;
+    color: #b91c1c
+}
+
+.pill-blue {
+    background: #dbeafe;
+    color: #1d4ed8
+}
+
+.pill-gray {
+    background: #edf2f7;
+    color: #475569
+}
+
+.btn {
+    display: inline-flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 9px 13px;
+    font-size: 13px;
+    font-weight: 650;
+    border: 1px solid #d9e3f0;
+    background: white;
+    color: #173b68
+}
+
+.btn-primary {
+    background: #1153ae;
+    color: white;
+    border-color: #1153ae
+}
+
+.btn:hover {
+    filter: brightness(.96)
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+th {
+    background: #f5f8fd;
+    color: #65758d;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 750;
+    white-space: nowrap
+}
+
+td {
+    font-size: 12px;
+    color: #30425e
+}
+
+th,
+td {
+    padding: 12px 13px;
+    border-bottom: 1px solid #edf1f7
+}
+
+tbody tr:hover {
+    background: #f9fbff
+}
+
+a {
+    text-decoration: none
+}
