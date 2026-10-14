@@ -8,6 +8,26 @@ const read = async (key, path) => {
 };
 export const dataService = {
   customers: () => read("customers", "/customers"),
+  customerTrips: async () => {
+    if (useMock()) {
+      return {
+        count: mock.trips.length,
+        data: mock.trips.map((trip) => ({
+          tripId: trip.tripId,
+          customerName:
+            mock.customers.find(
+              (customer) => customer.customerId === trip.customerId,
+            )?.name ?? "—",
+          serviceType: trip.serviceType,
+          terminal: trip.terminal.replace(/^T/, ""),
+          serviceDateTime: trip.serviceStartAt,
+        })),
+      };
+    }
+
+    const { data } = await apiClient.get("/customers/trips");
+    return data;
+  },
   trips: () => read("trips", "/trips"),
   staff: () => read("staff", "/staff"),
   allocations: () => read("allocations", "/allocations"),

@@ -20,6 +20,9 @@ import {
   useAllocations,
 } from "../services/hooks";
 const COLORS = ["#16a36c", "#3979f5", "#f59e0b", "#ef4444"];
+const normalizeTerminal = (terminal) =>
+  `T${String(terminal ?? "").trim().toUpperCase().replace(/^T/, "")}`;
+
 function Stat({ icon: Icon, label, value, tone }) {
   return (
     <div className="panel p-5 flex gap-4 items-center">
@@ -99,7 +102,8 @@ export default function Dashboard() {
   }));
   const terminals = ["T1", "T2"].map((x) => ({
     name: x,
-    trips: trips.filter((t) => t.terminal === x).length,
+    trips: trips.filter((trip) => normalizeTerminal(trip.terminal) === x)
+      .length,
   }));
   return (
     <>

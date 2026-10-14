@@ -2,31 +2,25 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import DataTable from "../components/DataTable";
-import StatusBadge from "../components/StatusBadge";
 import Loading from "../components/Loading";
-import { useCustomers, useTrips } from "../services/hooks";
+import { useCustomerTrips } from "../services/hooks";
 import { formatDate } from "../utils/format";
+
 export default function Customers() {
-  const c = useCustomers(),
-    t = useTrips();
-  const [status, setStatus] = useState("ALL"),
-    [terminal, setTerminal] = useState("ALL");
+  const trips = useCustomerTrips();
+  const [terminal, setTerminal] = useState("ALL");
+
   const rows = useMemo(() => {
-    if (!c.data || !t.data) return [];
-    return t.data
-      .map((x) => ({
-        ...x,
-        customerName:
-          c.data.find((y) => y.customerId === x.customerId)?.name || "—",
-      }))
-      .filter(
-        (x) =>
-          (status === "ALL" || x.status === status) &&
-          (terminal === "ALL" || x.terminal === terminal),
-      );
-  }, [c.data, t.data, status, terminal]);
-  if (c.isPending || t.isPending || c.isError || t.isError)
-    return <Loading error={c.isError || t.isError} />;
+    const data = trips.data?.data ?? [];
+    return data.filter(
+      (trip) => terminal === "ALL" || String(trip.terminal) === terminal,
+    );
+  }, [trips.data, terminal]);
+
+  if (trips.isPending || trips.isError) {
+    return <Loading error={trips.isError} />;
+  }
+
   const cols = [
     {
       accessorKey: "tripId",
@@ -42,16 +36,15 @@ export default function Customers() {
     },
     { accessorKey: "customerName", header: "Customer Name" },
     { accessorKey: "serviceType", header: "Service Type" },
-    { accessorKey: "terminal", header: "Terminal" },
     {
-      accessorKey: "serviceStartAt",
-      header: "Service Date & Time",
-      cell: ({ getValue }) => formatDate(getValue()),
+      accessorKey: "terminal",
+      header: "Terminal",
+      cell: ({ getValue }) => `T${String(getValue()).replace(/^T/, "")}`,
     },
     {
-      accessorKey: "status",
-      header: "Status",
-      cell: ({ getValue }) => <StatusBadge status={getValue()} />,
+      accessorKey: "serviceDateTime",
+      header: "Service Date & Time",
+      cell: ({ getValue }) => formatDate(getValue()),
     },
     {
       id: "action",
@@ -66,6 +59,7 @@ export default function Customers() {
       ),
     },
   ];
+
   return (
     <>
       <PageHeader
@@ -75,34 +69,17 @@ export default function Customers() {
       <DataTable
         data={rows}
         columns={cols}
-        searchKeys={["tripId", "customerName", "flightNumber"]}
+        searchKeys={["tripId", "customerName", "serviceType"]}
         filters={
-          <>
-            <select
-              className="field"
-              value={status}
-              onChange={(e) => setStatus(e.target.value)}
-            >
-              <option value="ALL">All statuses</option>
-              {[
-                "CONFIRMED",
-                "PENDING_VALIDATION",
-                "WAITLISTED",
-                "CANCELLED",
-              ].map((x) => (
-                <option key={x}>{x}</option>
-              ))}
-            </select>
-            <select
-              className="field"
-              value={terminal}
-              onChange={(e) => setTerminal(e.target.value)}
-            >
-              <option value="ALL">All terminals</option>
-              <option>T1</option>
-              <option>T2</option>
-            </select>
-          </>
+          <select
+            className="field"
+            value={terminal}
+            onChange={(e) => setTerminal(e.target.value)}
+          >
+            <option value="ALL">All terminals</option>
+            <option value="1">T1</option>
+            <option value="2">T2</option>
+          </select>
         }
       />
     </>
